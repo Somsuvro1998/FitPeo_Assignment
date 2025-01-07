@@ -42,8 +42,7 @@ public class FitPeo {
 		Thread.sleep(5000);
 		
 		//4.Adjusting the slider to 820
-		WebElement slider = driver.findElement(By.xpath("//span[@class='MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-sy3s50']"));
-		
+		WebElement slider=driver.findElement(By.xpath("//span[@class='MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1sfugkh']"));
         Actions action=new Actions(driver);
         
         //The X ad Y coordinates were fetched by Page Ruler extension in Chrome.
@@ -72,7 +71,7 @@ public class FitPeo {
 		Thread.sleep(5000);
 		
 		//6.Validate the slider value
-		WebElement sliderPosition = driver.findElement(By.xpath("//span[@class='MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-sy3s50']/input"));
+		WebElement sliderPosition=driver.findElement(By.xpath("//span[@class='MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary MuiSlider-thumb MuiSlider-thumbSizeMedium MuiSlider-thumbColorPrimary css-1sfugkh']/input"));
 		String sliderValue = sliderPosition.getAttribute("value");
 		
 		//Using TestNg class SoftAssert for validation
@@ -112,8 +111,7 @@ public class FitPeo {
 			//Scrolling down so that the header gets visible
 			js.executeScript("arguments[0].scrollIntoView();",CPT_99091);
 			
-			 String actualTotalRecurringReimbursement = driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 inter css-hocx5c'])[4]")).getText();
-			 
+			 String actualTotalRecurringReimbursement=driver.findElement(By.xpath("(//p[@class='MuiTypography-root MuiTypography-body1 inter css-1bl0tdj'])[4]")).getText();
 			 String expectedTotalRecurringReimbursement="$110700";
 			 
 			 sa.assertEquals(expectedTotalRecurringReimbursement,actualTotalRecurringReimbursement);
