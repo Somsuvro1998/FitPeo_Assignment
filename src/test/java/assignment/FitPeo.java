@@ -122,7 +122,7 @@ public class FitPeo {
 		 
 		
 		 sa.assertAll();
-		//updated code
+		//updated code- DOM updated
 		
 	}
 
